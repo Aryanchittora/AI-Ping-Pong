@@ -82,6 +82,9 @@ function draw(){
     // ARYAN'S Code
     if (wrist_score > 0.2) {
       document.getElementById("w_status").innerHTML = "Right Wrist Found";
+      fill("#FF0000");
+      stroke("#FF0000");
+      circle(wristX, wristY, 20);
     }
     else if (wrist_score < 0.2) {
       document.getElementById("w_status").innerHTML = "Right Wrist Not Found";
